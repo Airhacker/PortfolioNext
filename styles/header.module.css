@@ -1,0 +1,156 @@
+/* General Styling */
+
+.headerContainer {
+  width: 90%;
+  margin: 0 auto;
+  color: ;
+}
+
+.headerContainer::after {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #111;
+  margin-top: 100px;
+}
+
+/* Logo Styles */
+
+.headerLogo {
+  font-size: 60px;
+  line-height: 1em;
+  margin-bottom: 40px;
+}
+
+/* Header Content General Styles */
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerRight {
+  margin-right: 144px;
+}
+.headerRight div {
+  display: block;
+}
+
+.headerAboutText {
+  line-height: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.socialLinks {
+}
+
+.socialLinks a {
+  position: relative;
+  display: inline-block;
+  color: #999;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-decoration: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+/* Email Adrress */
+.headerLeft a {
+  color: inherit;
+  margin-bottom: 20px;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.headerLeft a span {
+  text-decoration: underline;
+}
+
+/* Titles styles */
+.headerPositions {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.headerPositions div {
+  display: block;
+}
+
+/* Phone Media Queries */
+
+@media (max-width: 575px) {
+  .headerContainer {
+    padding-top: 100px;
+  }
+
+  .headerContainer::after {
+    margin-top: 90px;
+  }
+
+  .headerContent {
+    flex-direction: column;
+  }
+
+  .headerLeft {
+    margin-bottom: 20px;
+  }
+  .headerLeft div {
+    display: block;
+  }
+
+  .headerLeft a {
+    font-size: 18px;
+  }
+}
+
+/* Other Media Queries */
+
+@media (max-width: 1024px) {
+  .headerContainer::after {
+    margin-top: 60px;
+  }
+
+  .headerPositions {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .headerRight {
+    margin-right: 53px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .headerContainer::after {
+    margin-top: 80px;
+  }
+
+  .headerRight {
+    margin-right: 19px;
+  }
+
+  .headerAboutText {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .socialLinks a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1680px) {
+  .headerContainer::after {
+    margin-top: 90px;
+  }
+
+  .headerRight {
+    margin-right: 35px;
+  }
+
+  .headerAboutText {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+}
