@@ -4,7 +4,10 @@ const Header = () => {
   return (
     <div>
       <section className={styles.headerContainer}>
-        <h1 className={styles.headerLogo}>Umair Ahmed</h1>
+        <h1 className={styles.headerLogo}>
+          Umair <br />
+          Ahmed
+        </h1>
         <div className={styles.headerContent}>
           <div className={styles.headerLeft}>
             <a>
@@ -19,7 +22,7 @@ const Header = () => {
               <p>
                 2 years web development experience.
                 <br />
-                Based in Houston
+                Based in Houston.
                 <br />
                 Get in touch for availability.
               </p>

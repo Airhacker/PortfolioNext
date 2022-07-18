@@ -1,48 +1,75 @@
-/* General Styling */
+/* General Styling for Section */
 
 .headerContainer {
   width: 90%;
   margin: 0 auto;
-  color: ;
+  color: #111;
+  padding-top: 6.25rem;
 }
 
 .headerContainer::after {
   content: "";
   display: block;
-  height: 5px;
+  height: 0.3rem;
   background-color: #111;
-  margin-top: 100px;
+  margin-top: 6rem;
 }
 
-/* Logo Styles */
-
+/* Logo */
 .headerLogo {
-  font-size: 60px;
-  line-height: 1em;
-  margin-bottom: 40px;
+  font-size: 3.75rem;
+  line-height: 3.5rem;
+  margin-top: 0rem;
+  margin-bottom: 2.5rem;
 }
 
-/* Header Content General Styles */
-
+/* All Header Content Container */
 .headerContent {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 
-.headerRight {
-  margin-right: 144px;
+/* Left side of header */
+.headerLeft {
+  margin-bottom: 1.25rem;
 }
-.headerRight div {
-  display: block;
+
+/* Email Adrress */
+.headerLeft a {
+  color: inherit;
+  margin-bottom: 1.25rem;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+}
+.headerLeft a span {
+  text-decoration: underline;
+}
+
+/* Titles styles */
+.headerPositions {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+}
+
+/* Right side of header */
+.headerRight {
+  margin-right: 3.35rem;
 }
 
 .headerAboutText {
+  font-size: 1rem;
   line-height: 1.5rem;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
-.socialLinks {
+.headerAboutText p {
+  margin-top: 0rem;
 }
+
+/* Social Links */
 
 .socialLinks a {
   position: relative;
@@ -51,106 +78,100 @@
   font-size: 16px;
   line-height: 1.5em;
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 1.25rem;
   cursor: pointer;
 }
 
-/* Email Adrress */
-.headerLeft a {
-  color: inherit;
-  margin-bottom: 20px;
-  display: inline-block;
-  background-color: transparent;
-  cursor: pointer;
-}
+/* TABLET MEDIA QUERIES */
 
-.headerLeft a span {
-  text-decoration: underline;
-}
-
-/* Titles styles */
-.headerPositions {
-  font-weight: 600;
-  letter-spacing: -0.01em;
-}
-.headerPositions div {
-  display: block;
-}
-
-/* Phone Media Queries */
-
-@media (max-width: 575px) {
+@media (min-width: 768px) {
+  /* General Styling for Section */
   .headerContainer {
-    padding-top: 100px;
+    padding-top: 8.75rem;
   }
 
-  .headerContainer::after {
-    margin-top: 90px;
+  /* Logo */
+  .headerLogo {
+    font-size: 7rem;
+    line-height: 6rem;
+    margin-bottom: 1.25rem;
   }
 
+  /* All Header Content Container */
   .headerContent {
-    flex-direction: column;
+    flex-direction: row;
   }
 
-  .headerLeft {
-    margin-bottom: 20px;
-  }
-  .headerLeft div {
-    display: block;
-  }
-
-  .headerLeft a {
-    font-size: 18px;
+  /* Right side of header */
+  .headerRight {
+    margin-right: 3.3rem;
   }
 }
 
-/* Other Media Queries */
+/* DESKTOP MEDIA QUERIES */
 
-@media (max-width: 1024px) {
-  .headerContainer::after {
-    margin-top: 60px;
+@media (min-width: 1440px) {
+  /* General Styling for Section */
+  .headerContainer {
+    width: 85%;
+    padding-top: 9.25rem;
   }
 
+  /* Logo */
+  .headerLogo {
+    font-size: 10rem;
+    line-height: 8.5rem;
+    margin-bottom: 2.25rem;
+  }
+
+  /* Titles styles */
   .headerPositions {
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 1.875rem;
   }
 
+  /* Right side of header */
   .headerRight {
-    margin-right: 53px;
+    margin-right: 1.25rem;
   }
 }
 
-@media (max-width: 1440px) {
-  .headerContainer::after {
-    margin-top: 80px;
+@media (min-width: 2560px) {
+  /* General Styling for Section */
+  .headerContainer {
+    width: 75%;
+    padding-top: 16.875rem;
   }
 
+  /* Logo */
+  .headerLogo {
+    font-size: 14rem;
+    line-height: 12rem;
+    margin-bottom: 7rem;
+  }
+
+  /* Email Adrress */
+  .headerLeft a {
+    font-size: 1.5rem;
+  }
+
+  /* Titles styles */
+  .headerPositions {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  /* Right side of header */
   .headerRight {
-    margin-right: 19px;
+    margin-right: 9rem;
   }
 
   .headerAboutText {
-    font-size: 16px;
-    margin-bottom: 15px;
+    font-size: 1.5rem;
   }
+
+  /* Social Links */
 
   .socialLinks a {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 1680px) {
-  .headerContainer::after {
-    margin-top: 90px;
-  }
-
-  .headerRight {
-    margin-right: 35px;
-  }
-
-  .headerAboutText {
-    font-size: 16px;
-    margin-bottom: 15px;
+    font-size: 1.5rem;
   }
 }
