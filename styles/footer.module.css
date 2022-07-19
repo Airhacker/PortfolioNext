@@ -1,0 +1,51 @@
+/* General Footer Styles */
+
+.footerContainer {
+  padding-top: 5rem;
+  padding-bottom: 3.75rem;
+  background-color: #111;
+  color: white;
+}
+
+.footerInnerContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Heading styles */
+.footerTitle {
+  margin-bottom: 3.125rem;
+  font-size: 1.875rem;
+  line-height: 1.125rem;
+  font-weight: 600;
+}
+
+/* Footer Email */
+.footerEmail {
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.footerEmail a {
+  cursor: pointer;
+}
+
+/* Footer Social Links */
+.footerSocialLinks {
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+
+.footerSocialLinks a {
+  margin-right: 1.25rem;
+  line-height: 1.5rem;
+  color: #999;
+  padding: 1rem 0rem;
+}
+
+/* Footer Copyright */
+.footerCopyright {
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+  color: #999;
+}
