@@ -1,8 +1,13 @@
+import styles from "../styles/projects.module.css";
+import Ninfas from "./ninfas";
+
 const Projects = () => {
   return (
-    <div>
-      <h1>Projects</h1>
-    </div>
+    <section className={styles.projectsContainer}>
+      <div className={styles.projectsInnerContainer}>
+        <Ninfas />
+      </div>
+    </section>
   );
 };
 export default Projects;

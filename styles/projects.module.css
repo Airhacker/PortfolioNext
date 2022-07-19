@@ -1,0 +1,53 @@
+/* General Styling */
+.projectsContainer {
+  padding-top: 1.25rem;
+  padding-bottom: 2.5rem;
+  color: #111;
+}
+
+.projectsInnerContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Project Styling */
+
+.homeProject {
+  border: none;
+}
+
+.homeProjectContainer {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.homeProjectContent {
+  width: 100%;
+  max-width: none;
+}
+
+.projectTitle {
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  margin-bottom: 0rem;
+  font-weight: 600;
+}
+
+.projectTasks {
+  line-height: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.projectTasks svg {
+  margin-right: 1rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.projectDescription {
+  display: none;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  margin-bottom: 2.5rem;
+  color: #333;
+}
