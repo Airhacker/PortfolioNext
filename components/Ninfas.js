@@ -1,9 +1,7 @@
 import styles from "../styles/projects.module.css";
-import { IoLogoCss3 } from "react-icons/io";
-import { IoLogoHtml5 } from "react-icons/io";
-import { IoLogoJavascript } from "react-icons/io";
-import { SiNextdotjs } from "react-icons/si";
 import { BsArrowRight } from "react-icons/bs";
+import React from "react";
+import ReactPlayer from "react-player/youtube";
 
 const Ninfas = () => {
   return (
@@ -12,10 +10,9 @@ const Ninfas = () => {
         <div className={styles.homeProjectContent}>
           <a className={styles.projectTitle}>Ninfas Missouri City</a>
           <div className={styles.projectTasks}>
-            <SiNextdotjs />
-            <IoLogoJavascript />
-            <IoLogoCss3 />
-            <IoLogoHtml5 />
+            <span>NEXT.JS</span>
+            <span>REACT</span>
+            <span>CSS</span>
           </div>
           <div className={styles.projectDescription}>
             <p>Website made for the restaurant Mama Ninfa.</p>
@@ -24,7 +21,22 @@ const Ninfas = () => {
             Visit <BsArrowRight />
           </a>
         </div>
-        <div className={styles.homeProjectGraphics}></div>
+        <div className={styles.homeProjectGraphics}>
+          <a href="google.com" className={styles.videoContainer}>
+            <div className="player-wrapper"></div>
+            <ReactPlayer
+              className="react-player"
+              url={
+                "https://www.youtube.com/watch?v=D8u4RPIYouU&ab_channel=Dr.Ultr0n"
+              }
+              muted="true"
+              width="100%"
+              height="100%"
+              playing="true"
+              loop="true"
+            />
+          </a>
+        </div>
       </div>
     </section>
   );

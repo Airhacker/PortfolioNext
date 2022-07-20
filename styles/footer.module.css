@@ -3,7 +3,7 @@
 .footerContainer {
   padding-top: 5rem;
   padding-bottom: 3.75rem;
-  background-color: #111;
+  background-color: black;
   color: white;
 }
 
@@ -48,4 +48,65 @@
   font-size: 0.8rem;
   line-height: 1.25rem;
   color: #999;
+}
+
+/* TABLET MEDIA QUERIES */
+
+@media (min-width: 768px) {
+  /* General Footer Styles */
+  .footerContainer {
+    padding-bottom: 5rem;
+  }
+
+  /* Heading styles */
+  .footerTitle {
+    font-size: 3.125rem;
+    line-height: 1.35rem;
+  }
+
+  /* Footer Social Links */
+  .footerSocialLinks {
+    margin-bottom: 6.25rem;
+  }
+
+  /* Footer Copyright */
+  .footerCopyright {
+    font-size: 1rem;
+  }
+}
+
+/* LAPTOP MEDIA QUERIES */
+
+@media (min-width: 1440px) {
+  /* General Footer Styles */
+  .footerContainer {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+  }
+
+  .footerInnerContainer {
+    width: 85%;
+  }
+
+  /* Heading styles */
+  .footerTitle {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  /* General Footer Styles */
+  .footerContainer {
+    padding-top: 7.5rem;
+    padding-bottom: 11.5rem;
+  }
+
+  .footerInnerContainer {
+    width: 75%;
+  }
+
+  /* Heading styles */
+  .footerTitle {
+    font-size: 4.7rem;
+  }
 }
