@@ -1,13 +1,17 @@
 import styles from "../styles/projects.module.css";
 import { BsArrowRight } from "react-icons/bs";
 import React from "react";
-import ReactPlayer from "react-player/youtube";
+import Image from "next/image";
+import ninfasVideo from "../public/ninfasVideo.gif";
 
 const Ninfas = () => {
   return (
     <section className={styles.homeProject}>
       <div className={styles.homeProjectContainer}>
         <div className={styles.homeProjectContent}>
+          <div className={styles.projectHead}>
+            <span>Project</span>
+          </div>
           <a className={styles.projectTitle}>Ninfas Missouri City</a>
           <div className={styles.projectTasks}>
             <span>NEXT.JS</span>
@@ -23,17 +27,10 @@ const Ninfas = () => {
         </div>
         <div className={styles.homeProjectGraphics}>
           <a href="google.com" className={styles.videoContainer}>
-            <div className="player-wrapper"></div>
-            <ReactPlayer
-              className="react-player"
-              url={
-                "https://www.youtube.com/watch?v=D8u4RPIYouU&ab_channel=Dr.Ultr0n"
-              }
-              muted="true"
-              width="100%"
-              height="100%"
-              playing="true"
-              loop="true"
+            <Image
+              src={ninfasVideo}
+              alt="Gif of Ninfas Website"
+              layout="fill"
             />
           </a>
         </div>
