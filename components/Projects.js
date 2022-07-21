@@ -1,5 +1,5 @@
 import styles from "../styles/projects.module.css";
-import Ninfas from "./ninfas";
+import Ninfas from "./Ninfas";
 
 const Projects = () => {
   return (
