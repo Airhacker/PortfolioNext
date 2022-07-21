@@ -28,9 +28,27 @@ const Header = () => {
               </p>
             </div>
             <div className={styles.socialLinks}>
-              <a>Resume</a>
-              <a>LinkedIn</a>
-              <a>Github</a>
+              <a
+                href="https://docs.google.com/document/d/1OKRi45ppNU2lr-N_9YfWUuB-ZyewsH8FgF0GgwkGKxE/edit"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Resume
+              </a>
+              <a
+                href="https://www.linkedin.com/in/umair-ahmed-dev/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/Airhacker"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Github
+              </a>
             </div>
           </div>
         </div>
