@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import ninfasVideo from "../public/ninfasVideo.gif";
 import ninfaFood from "../public/ninfaFood.png";
+import Plyr from "plyr-react";
 
 const Ninfas = () => {
   return (
@@ -45,10 +46,37 @@ const Ninfas = () => {
             rel="noreferrer"
             className={styles.videoContainer}
           >
-            <Image
-              src={ninfasVideo}
-              alt="Gif of Ninfas Website"
-              layout="fill"
+            <Plyr
+              options={{
+                autoplay: true,
+                enabled: true,
+                clickToPlay: false,
+                playsinline: true,
+                controls: [],
+                fullscreen: {
+                  enabled: false,
+                },
+                loop: { active: true },
+                muted: true,
+                quality: {
+                  default: 480,
+                  options: [720, 480],
+                },
+                settings: [],
+                volume: 0,
+                youtube: {
+                  noCookie: true,
+                },
+              }}
+              source={{
+                sources: [
+                  {
+                    src: "https://www.youtube.com/watch?v=Sx853ikyXjg&ab_channel=Ammi",
+                    provider: "youtube",
+                  },
+                ],
+                type: "video",
+              }}
             />
             <div className={styles.projectImage}>
               <Image
