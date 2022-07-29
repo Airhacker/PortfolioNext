@@ -71,7 +71,7 @@ const Ninfas = () => {
               source={{
                 sources: [
                   {
-                    src: "https://www.youtube.com/watch?v=Sx853ikyXjg&ab_channel=Ammi",
+                    src: "https://youtu.be/1YrVGcsSIE4",
                     provider: "youtube",
                   },
                 ],
