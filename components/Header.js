@@ -1,4 +1,5 @@
 import styles from "../styles/header.module.css";
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (
@@ -34,6 +35,7 @@ const Header = () => {
                 rel="noreferrer"
               >
                 Resume
+                <span></span>
               </a>
               <a
                 href="https://www.linkedin.com/in/umair-ahmed-dev/"

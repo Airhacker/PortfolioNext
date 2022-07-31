@@ -2,7 +2,6 @@ import styles from "../styles/projects.module.css";
 import { BsArrowRight } from "react-icons/bs";
 import React from "react";
 import Image from "next/image";
-import ninfasVideo from "../public/ninfasVideo.gif";
 import ninfaFood from "../public/ninfaFood.png";
 import Plyr from "plyr-react";
 
@@ -59,7 +58,7 @@ const Ninfas = () => {
                 loop: { active: true },
                 muted: true,
                 quality: {
-                  default: 480,
+                  default: 720,
                   options: [720, 480],
                 },
                 settings: [],
@@ -69,13 +68,13 @@ const Ninfas = () => {
                 },
               }}
               source={{
+                type: "video",
                 sources: [
                   {
                     src: "https://youtu.be/1YrVGcsSIE4",
                     provider: "youtube",
                   },
                 ],
-                type: "video",
               }}
             />
             <div className={styles.projectImage}>
