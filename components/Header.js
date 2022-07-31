@@ -1,26 +1,89 @@
-import styles from "../styles/header.module.css";
+import { useState } from "react";
 import { motion } from "framer-motion";
+import styles from "../styles/header.module.css";
 
 const Header = () => {
+  const head1 = "Umair";
+  const head2 = "Ahmed";
+  const email1 = "umairahmed.dev";
+  const email2 = "gmail.com";
+
+  const sentence = {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.5,
+        staggerChildren: 0.08,
+      },
+    },
+  };
+
+  const letter = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <div>
       <section className={styles.headerContainer}>
-        <h1 className={styles.headerLogo}>
-          Umair <br />
-          Ahmed
-        </h1>
+        <motion.h1
+          className={styles.headerLogo}
+          variants={sentence}
+          initial="hidden"
+          whileInView="visible"
+        >
+          {head1.split("").map((char, index) => {
+            return (
+              <motion.span key={char + "-" + index} variants={letter}>
+                {char}
+              </motion.span>
+            );
+          })}
+          <br />
+          {head2.split("").map((char, index) => {
+            return (
+              <motion.span key={char + "-" + index} variants={letter}>
+                {char}
+              </motion.span>
+            );
+          })}
+        </motion.h1>
         <div className={styles.headerContent}>
           <div className={styles.headerLeft}>
-            <a>
-              <span>umairahmed.dev</span>@<span>gmail.com</span>
-            </a>
+            <motion.a
+              variants={sentence}
+              initial="hidden"
+              whileInView="visible"
+            >
+              {/* <span>umairahmed.dev</span>@<span>gmail.com</span> */}
+              {email1.split("").map((char, index) => {
+                return (
+                  <motion.span key={char + "-" + index} variants={letter}>
+                    {char}
+                  </motion.span>
+                );
+              })}
+              @
+              {email2.split("").map((char, index) => {
+                return (
+                  <motion.span key={char + "-" + index} variants={letter}>
+                    {char}
+                  </motion.span>
+                );
+              })}
+            </motion.a>
             <div className={styles.headerPositions}>
               <span>/Web Developer</span>
             </div>
           </div>
           <div className={styles.headerRight}>
             <div className={styles.headerAboutText}>
-              <p>
+              <p
+                initial={{ scaleY: 0, y: 20, opacity: 0 }}
+                whileInView={{ scaleY: 1, y: 0, opacity: 1 }}
+                transition={{ delay: 1, ease: "easeOut" }}
+              >
                 2 years web development experience.
                 <br />
                 Based in Houston.

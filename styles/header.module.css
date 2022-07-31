@@ -86,19 +86,19 @@
 
 .socialLinks a:hover {
   color: #333;
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 .socialLinks a::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: #333;
   bottom: 0;
   left: 0;
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 
 .socialLinks a:hover::before {
