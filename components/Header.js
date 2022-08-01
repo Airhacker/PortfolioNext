@@ -7,6 +7,10 @@ const Header = () => {
   const head2 = "Ahmed";
   const email1 = "umairahmed.dev";
   const email2 = "gmail.com";
+  const skills = "/Web Developer";
+  const about1 = "2 years web development experience.";
+  const about2 = "Based in Houston.";
+  const about3 = "Get in touch for availability.";
 
   const sentence = {
     hidden: { opacity: 1 },
@@ -14,7 +18,7 @@ const Header = () => {
       opacity: 1,
       transition: {
         delay: 0.5,
-        staggerChildren: 0.08,
+        staggerChildren: 0.05,
       },
     },
   };
@@ -73,24 +77,36 @@ const Header = () => {
                 );
               })}
             </motion.a>
-            <div className={styles.headerPositions}>
-              <span>/Web Developer</span>
-            </div>
+            <motion.div
+              className={styles.headerPositions}
+              variants={sentence}
+              initial="hidden"
+              whileInView="visible"
+            >
+              {skills.split("").map((char, index) => {
+                return (
+                  <motion.span key={char + "-" + index} variants={letter}>
+                    {char}
+                  </motion.span>
+                );
+              })}
+            </motion.div>
           </div>
           <div className={styles.headerRight}>
-            <div className={styles.headerAboutText}>
-              <p
-                initial={{ scaleY: 0, y: 20, opacity: 0 }}
-                whileInView={{ scaleY: 1, y: 0, opacity: 1 }}
-                transition={{ delay: 1, ease: "easeOut" }}
-              >
+            <motion.div
+              className={styles.headerAboutText}
+              variants={sentence}
+              initial="hidden"
+              whileInView="visible"
+            >
+              <p>
                 2 years web development experience.
                 <br />
                 Based in Houston.
                 <br />
                 Get in touch for availability.
               </p>
-            </div>
+            </motion.div>
             <div className={styles.socialLinks}>
               <a
                 href="https://docs.google.com/document/d/1OKRi45ppNU2lr-N_9YfWUuB-ZyewsH8FgF0GgwkGKxE/edit"

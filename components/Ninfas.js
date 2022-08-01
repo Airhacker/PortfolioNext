@@ -14,7 +14,7 @@ const Ninfas = () => {
             <span>Project</span>
           </div>
           <a
-            href="https://ninfas.vercel.app/"
+            href="https://ninfasmissouricity.com/"
             target="_blank"
             rel="noreferrer"
             className={styles.projectTitle}
@@ -30,7 +30,7 @@ const Ninfas = () => {
             <p>Website made for the restaurant Mama Ninfa.</p>
           </div>
           <a
-            href="https://ninfas.vercel.app/"
+            href="https://ninfasmissouricity.com/"
             target="_blank"
             rel="noreferrer"
             className={styles.projectName}
@@ -40,7 +40,7 @@ const Ninfas = () => {
         </div>
         <div className={styles.homeProjectGraphics}>
           <a
-            href="https://ninfas.vercel.app/"
+            href="https://ninfasmissouricity.com/"
             target="_blank"
             rel="noreferrer"
             className={styles.videoContainer}
